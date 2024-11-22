@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" method="upgrade">
+    <name>MOD_SENDY</name>
+    <author>Your Name</author>
+    <creationDate>November 2024</creationDate>
+    <copyright>(C) 2024 Brahma Kumaris. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail>allan@bkconnect.net</authorEmail>
+    <authorUrl>www.brahmakumaris.org</authorUrl>
+    <version>1.0.0</version>
+    <description>MOD_SENDY_XML_DESCRIPTION</description>
+    
+    <files>
+        <filename module="mod_sendy">mod_sendy.php</filename>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+    </files>
+
+    <media destination="mod_sendy" folder="media">
+        <folder>js</folder>
+    </media>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+                <field
+                    name="disclaimer_text"
+                    type="editor"
+                    label="MOD_SENDY_DISCLAIMER_TEXT_LABEL"
+                    description="MOD_SENDY_DISCLAIMER_TEXT_DESC"
+                    filter="safehtml" />
+            </fieldset>
+        </fields>
+    </config>
+</extension> 

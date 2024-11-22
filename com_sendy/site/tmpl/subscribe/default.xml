@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_SENDY_MENU_SUBSCRIBE_VIEW_DEFAULT_TITLE">
+        <message>
+            <![CDATA[COM_SENDY_MENU_SUBSCRIBE_VIEW_DEFAULT_DESC]]>
+        </message>
+    </layout>
+    
+    <fields name="params">
+        <fieldset name="basic" label="COM_SENDY_FIELDSET_BASIC_LABEL">
+            <field
+                name="show_page_heading"
+                type="list"
+                label="JGLOBAL_SHOW_PAGE_HEADING_LABEL"
+                default="1"
+                >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+
+            <field
+                name="page_heading"
+                type="text"
+                label="JGLOBAL_PAGE_HEADING"
+                description="JGLOBAL_PAGE_HEADING_DESC"
+            />
+
+            <field
+                name="page_class"
+                type="text"
+                label="COM_SENDY_FIELD_PAGECLASS_LABEL"
+                description="COM_SENDY_FIELD_PAGECLASS_DESC"
+            />
+        </fieldset>
+    </fields>
+</metadata> 

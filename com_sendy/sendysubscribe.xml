@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+    <name>com_sendy</name>
+    <author>Allan Schweitz</author>
+    <creationDate>November 2024</creationDate>
+    <copyright>(C) 2024 Brahma Kumaris All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <version>1.0.0</version>
+    <description>COM_SENDY_XML_DESCRIPTION</description>
+
+    <namespace path="src">BKWSU\Component\Sendy</namespace>
+
+    <files folder="site">
+        <folder>language</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+
+    <media destination="com_sendy" folder="media">
+        <folder>js</folder>
+    </media>
+
+    <administration>
+        <menu>COM_SENDY</menu>
+        <files folder="administrator">
+            <folder>language</folder>
+            <folder>sql</folder>
+            <folder>src</folder>
+            <folder>tmpl</folder>
+            <folder>services</folder>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+        </files>
+    </administration>
+
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+</extension> 
