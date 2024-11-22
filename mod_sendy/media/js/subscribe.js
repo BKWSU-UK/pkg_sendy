@@ -1,17 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('mod-sendy-subscribe-form');
-    const messagesDiv = document.getElementById('mod-subscription-messages');
+    const form = document.getElementById('sendy-subscribe-form');
+    const messagesDiv = document.getElementById('subscription-messages');
 
     if (form) {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
 
             const formData = new FormData(form);
-            formData.append('option', 'com_sendy');
-            formData.append('task', 'subscribe.ajaxSubmit');
             formData.append(Joomla.getOptions('csrf.token'), '1');
 
-            fetch('index.php', {
+            // Send Ajax request
+            fetch('?option=com_sendy&task=subscribe.ajaxSubmit&format=json', {
                 method: 'POST',
                 body: formData
             })

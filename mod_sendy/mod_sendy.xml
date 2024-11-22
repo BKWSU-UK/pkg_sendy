@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" client="site" method="upgrade">
-    <name>MOD_SENDY</name>
-    <author>Your Name</author>
+    <name>Sendy Subscribe Module</name>
+    <author>Allan Schweitz</author>
     <creationDate>November 2024</creationDate>
     <copyright>(C) 2024 Brahma Kumaris. All rights reserved.</copyright>
     <license>GNU General Public License version 2 or later</license>

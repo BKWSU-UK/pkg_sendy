@@ -18,11 +18,15 @@ $params = $this->params;
 
 <div class="sendy-subscribe<?php echo $params->get('pageclass_sfx', ''); ?>">
     <div id="subscription-messages"></div>
-    
     <form id="sendy-subscribe-form" class="form-validate">
-        <div class="mb-3">
-            <label for="name" class="form-label"><?php echo Text::_('COM_SENDY_NAME_LABEL'); ?></label>
-            <input type="text" class="form-control required" name="name" id="name" required>
+        <div class="mb-4">
+            <label for="fullname" class="form-label"><?php echo Text::_('COM_SENDY_NAME_LABEL'); ?></label>
+            <input type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                class="form-control required"
+                required>
         </div>
 
         <div class="mb-3">
@@ -30,7 +34,8 @@ $params = $this->params;
             <input type="email" class="form-control required validate-email" name="email" id="email" required>
         </div>
 
-        <button type="submit" class="btn btn-primary">
+        <button type="submit"
+            class="spin flex-box Montserrat-Regular">
             <?php echo Text::_('COM_SENDY_SUBMIT'); ?>
         </button>
 

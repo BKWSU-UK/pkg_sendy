@@ -24,6 +24,10 @@ class SubscribeModel extends BaseDatabaseModel
         // Validate Sendy configuration
         if (empty($sendyUrl) || empty($apiKey) || empty($listId)) {
             Log::add('Missing Sendy configuration', Log::ERROR, 'com_sendy');
+            Factory::getApplication()->enqueueMessage(
+                Text::_('COM_SENDY_MISSING_CONFIG'),
+                'error'
+            );
             throw new \RuntimeException(Text::_('COM_SENDY_MISSING_CONFIG'));
         }
 

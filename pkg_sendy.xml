@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="1.6" method="upgrade">
+    <name>Sendy</name>
+    <author>Allan Schweitz</author>
+    <creationDate>November 2024</creationDate>
+    <packagename>pkg_sendy</packagename>
+    <version>1.0.0</version>
+    <url>https://www.brahmakumaris.org</url>
+    <packager>Allan Schweitz</packager>
+    <description>Package containing the Sendy component and module.</description>
+    <files>
+        <file type="component" id="com_sendy" >com_sendy.zip</file>
+        <file type="module" id="modsendy" client="site">mod_sendy.zip</file>
+    </files>
+</extension>
