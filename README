@@ -1,0 +1,10 @@
+This package comprises of the Sendy component and the Sendy module.
+
+## Sendy Component
+
+The Sendy component is a Joomla component that handles the backend logic for the registration form.
+It captures the data from the form and stores it the local database and then submits it to the Sendy API.
+
+## Sendy Module
+
+The Sendy module is a Joomla module that displays the registration form on the frontend. It then submits the data to the Sendy component.
